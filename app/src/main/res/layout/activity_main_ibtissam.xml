@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorBackgroundIbtissam"
+    android:padding="24dp"
+    tools:context=".MainActivityIbtissam">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@android:drawable/ic_dialog_info"
+                app:tint="@color/colorPrimaryIbtissam"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvTitleIbtissam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ibtissam's Receivers"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDarkIbtissam"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvStatusIbtissam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨ Ibtissam: Receiver Mode Avion DÉSACTIVÉ ✨"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginBottom="24dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnToggleAirplaneIbtissam"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Activer Receiver Avion Ibtissam"
+                android:textSize="16sp"
+                app:cornerRadius="12dp"
+                android:backgroundTint="@color/colorPrimaryIbtissam"
+                android:layout_marginBottom="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSendCustomIbtissam"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Envoyer Custom Broadcast Ibtissam"
+                android:textSize="16sp"
+                app:cornerRadius="12dp"
+                android:backgroundTint="@color/colorAccentIbtissam"
+                app:icon="@android:drawable/ic_menu_send"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
